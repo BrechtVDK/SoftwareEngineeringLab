@@ -1,7 +1,7 @@
 ﻿# This script is to automate the installation of software.
 # There are three types of software that can be allowed to be installed
 # - Software for Common Use
-# - Software for Software Engineering Lab
+# - Software for System Engineering Lab
 # - Software for Personal Use
 
 
@@ -44,7 +44,7 @@ if ($approved -like "y") {
 # Set empty line
 Write-Host "";
 
-# Install software for Software Engineering Lab
+# Install software for System Engineering Lab
 # This is the extra software that will be needed for the course: Software Engineering Lab
 # List of the installed software:
 # FileZilla, VirtualBox, MySQL Workbench
@@ -72,7 +72,7 @@ if ($approved -like "y") {
     choco install -y mysql.workbench;
     choco install -y virtualbox;
 } else {
-    Write-warning "Don't install software for Software Engineering Lab";
+    Write-warning "Don't install software for System Engineering Lab";
 }
 # Set empty line
 Write-Host "";
